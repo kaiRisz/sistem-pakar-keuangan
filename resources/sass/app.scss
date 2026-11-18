@@ -1,0 +1,24 @@
+// Palet warna SRS 4.3
+$forest: #166534;
+$emerald: #10B981;
+$soft-green: #F0FDF4;
+$text: #1F2937;
+
+// Override variabel Bootstrap (harus sebelum import)
+$primary: $forest;
+$success: $emerald;
+$body-bg: $soft-green;
+$body-color: $text;
+$border-radius: 0.6rem;
+$card-border-width: 0;
+
+@import 'bootstrap/scss/bootstrap';
+
+// Utilitas tambahan
+.text-forest { color: $forest; }
+.bg-soft { background-color: $soft-green; }
+.hero {
+    background: linear-gradient(135deg, $forest, $emerald);
+    color: #fff;
+}
+.card { box-shadow: 0 2px 12px rgba(22, 101, 52, 0.08); }
